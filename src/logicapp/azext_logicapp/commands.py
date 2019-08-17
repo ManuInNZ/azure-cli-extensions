@@ -11,7 +11,7 @@ from azext_logicapp._client_factory import cf_logicapp
 def load_command_table(self, _):
 
     logicapp_sdk = CliCommandType(
-        operations_tmpl='azext_logicapp.vendored_sdks.operations#WorkflowRunsOperations.{}',
+        operations_tmpl='azext_logicapp.vendored_sdks.operations#WorkflowsOperations.{}',
         client_factory=cf_logicapp)
 
 
